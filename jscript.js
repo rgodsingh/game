@@ -76,12 +76,17 @@ $(".box").on("click", function (event) {
 
 
 $(document).on("keypress", function (event) {
-    if (started == false && event.key == 'a') {
-        started = true;
-        level = 1;
-        $("h1").html("Level " + level);
-        make_pattern();
-        show_pattern();
-        k = 0;
+    if (started == false ){
+        if( event.key == 'a') {
+            started = true;
+            level = 1;
+            $("h1").html("Level " + level);
+            make_pattern();
+            show_pattern();
+            k = 0;
+        }
+    }
+    else{
+        $("h1").html("Press a to start new game");
     }
 });

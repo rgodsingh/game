@@ -1,0 +1,58 @@
+*{
+  margin: 0em;
+  padding: 0em;
+  font-family: 'Press Start 2P', cursive;
+}
+body{
+  background-color: #251c4e;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+}
+h1{
+  color: white;
+  text-align: center;
+  padding: 1.5em;
+  font-size: 3rem;
+}
+.main{
+  /* border: 2px solid white; */
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.box-c{
+  display: flex;
+  justify-content: center;
+}
+.box{
+  width: 25%;
+  padding: 4em;
+  border-radius: 3em;
+  margin: 2em;
+  /* background-color: violet; */
+  border: 10px solid black;
+}
+.b1{
+  background: green;
+}
+.b2{
+  background: red;
+}
+.b3{
+  background: yellow;
+}
+.b4{
+  background: blue;
+}
+.content{
+  visibility: hidden;
+}
+.fade{
+  opacity: 0.7;
+  box-shadow: 2px 2px 5px white;
+}
+.pressed{
+  box-shadow: 2px 2px 5px whitesmoke;
+}
